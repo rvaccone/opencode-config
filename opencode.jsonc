@@ -39,6 +39,7 @@
 			"pnpm why *": "allow",
 			"pwd *": "allow",
 			"rg *": "allow",
+			"sips *": "allow",
 			"tail *": "allow",
 			"tree *": "allow",
 			"uname *": "allow",
