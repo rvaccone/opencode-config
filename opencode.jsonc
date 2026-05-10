@@ -1,5 +1,16 @@
 {
 	"$schema": "https://opencode.ai/config.json",
+	"agent": {
+		"build": {
+			"color": "#C4876D"
+		},
+		"plan": {
+			"color": "#8FA98A",
+			"permission": {
+				"edit": "deny"
+			}
+		}
+	},
 	"formatter": true,
 	"permission": {
 		"bash": {
@@ -27,6 +38,7 @@
 			"pnpm view *": "allow",
 			"pnpm why *": "allow",
 			"pwd *": "allow",
+			"rg *": "allow",
 			"tail *": "allow",
 			"tree *": "allow",
 			"uname *": "allow",
@@ -37,15 +49,5 @@
 		"edit": "ask",
 		"external_directory": "allow"
 	},
-	"agent": {
-		"build": {
-			"color": "#C4876D"
-		},
-		"plan": {
-			"color": "#8FA98A",
-			"permission": {
-				"edit": "deny"
-			}
-		}
-	}
+	"lsp": true
 }
