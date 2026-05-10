@@ -1,13 +1,51 @@
 {
 	"$schema": "https://opencode.ai/config.json",
+	"formatter": true,
 	"permission": {
-		// Ask for permission to run any command
+		"bash": {
+			"*": "ask",
+			"brew list *": "allow",
+			"bun pm ls *": "allow",
+			"cat *": "allow",
+			"date *": "allow",
+			"df *": "allow",
+			"diff *": "allow",
+			"du *": "allow",
+			"env *": "allow",
+			"file *": "allow",
+			"find *": "allow",
+			"git diff *": "allow",
+			"git log *": "allow",
+			"git show *": "allow",
+			"git status *": "allow",
+			"grep *": "allow",
+			"head *": "allow",
+			"ls *": "allow",
+			"npm list *": "allow",
+			"pnpm list *": "allow",
+			"pnpm outdated *": "allow",
+			"pnpm view *": "allow",
+			"pnpm why *": "allow",
+			"pwd *": "allow",
+			"tail *": "allow",
+			"tree *": "allow",
+			"uname *": "allow",
+			"wc *": "allow",
+			"which *": "allow",
+			"whoami *": "allow"
+		},
 		"edit": "ask",
-		"read": {
-			"*": "allow",
-			"*.env": "deny",
-			"*.env.*": "deny",
-			"*.env.example": "allow"
+		"external_directory": "allow"
+	},
+	"agent": {
+		"build": {
+			"color": "#C4876D"
+		},
+		"plan": {
+			"color": "#8FA98A",
+			"permission": {
+				"edit": "deny"
+			}
 		}
 	}
 }
