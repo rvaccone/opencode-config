@@ -11,6 +11,7 @@
 			}
 		}
 	},
+	"autoupdate": true,
 	"command": {
 		"commit": {
 			"description": "Generate a commit message from staged changes and commit",
@@ -19,6 +20,20 @@
 		}
 	},
 	"formatter": true,
+	"mcp": {
+		"context7": {
+			"type": "remote",
+			"url": "https://mcp.context7.com/mcp",
+			"headers": {
+				"CONTEXT7_API_KEY": "{file:~/.local/share/opencode/secrets/context7.key}"
+			}
+		},
+		"gh_grep": {
+			"type": "remote",
+			"url": "https://mcp.grep.app"
+		}
+	},
+	"model": "opencode-go/kimi-k2.6",
 	"permission": {
 		"bash": {
 			"*": "ask",
@@ -28,13 +43,10 @@
 			"bun run lint *": "allow",
 			"bun run typecheck *": "allow",
 			"cat *": "allow",
-			"date": "allow",
 			"date *": "allow",
-			"df": "allow",
 			"df *": "allow",
 			"diff *": "allow",
 			"du *": "allow",
-			"env": "allow",
 			"env *": "allow",
 			"file *": "allow",
 			"find *": "allow",
@@ -42,9 +54,9 @@
 			"git log *": "allow",
 			"git show *": "allow",
 			"git status *": "allow",
+			"glob *": "allow",
 			"grep *": "allow",
 			"head *": "allow",
-			"ls": "allow",
 			"ls *": "allow",
 			"npm list *": "allow",
 			"npm run build *": "allow",
@@ -58,17 +70,14 @@
 			"pnpm run typecheck *": "allow",
 			"pnpm view *": "allow",
 			"pnpm why *": "allow",
-			"pwd": "allow",
 			"pwd *": "allow",
 			"rg *": "allow",
 			"sips *": "allow",
 			"tail *": "allow",
 			"tree *": "allow",
-			"uname": "allow",
 			"uname *": "allow",
 			"wc *": "allow",
 			"which *": "allow",
-			"whoami": "allow",
 			"whoami *": "allow"
 		},
 		"edit": "ask",
