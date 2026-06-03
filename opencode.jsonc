@@ -9,6 +9,15 @@
 			"permission": {
 				"edit": "deny"
 			}
+		},
+		"Auto": {
+			"color": "#C48A8A",
+			"permission": {
+				"bash": {
+					"*": "allow"
+				},
+				"edit": "allow"
+			}
 		}
 	},
 	"autoupdate": true,
