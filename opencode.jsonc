@@ -42,7 +42,7 @@
 			"url": "https://mcp.grep.app"
 		}
 	},
-	"model": "opencode-go/kimi-k2.6",
+	"model": "opencode-go/glm-5.2",
 	"permission": {
 		"bash": {
 			"*": "ask",
