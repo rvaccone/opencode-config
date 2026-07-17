@@ -24,7 +24,7 @@
 	"command": {
 		"commit": {
 			"description": "Generate a commit message from staged changes and commit",
-			"model": "opencode/deepseek-v4-flash-free",
+			"model": "opencode-go/kimi-k3",
 			"template": "Analyze the following staged git diff and generate a concise, descriptive commit message in plain English that accurately summarizes the changes.\n\nStaged changes:\n!`git diff --staged`\n\nProvide only the commit message text (without quotes). Then run `git commit -m \"<generated message>\"` followed by `git push` to push the changes."
 		}
 	},
@@ -42,7 +42,7 @@
 			"url": "https://mcp.grep.app"
 		}
 	},
-	"model": "opencode-go/glm-5.2",
+	"model": "opencode-go/kimi-k3",
 	"permission": {
 		"bash": {
 			"*": "ask",
